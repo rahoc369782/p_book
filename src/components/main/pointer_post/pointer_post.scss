@@ -1,0 +1,135 @@
+@import "../../../global.scss";
+
+.fPDpuU {
+    margin: unset !important;
+}
+.post_container {
+    border-bottom: 6px solid $primary_border_color;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    .post_subcontainer {
+        .post_textual_data_container {
+            padding: 3px 10px;
+        }
+        .post_media_part {
+            position: relative;
+            & img {
+                width: 100%;
+                height: auto;
+            }
+            .counter_of_posts {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                color: white;
+                padding: 5px;
+                font-size: 10px;
+                font-family: extra_mid_poppins;
+                border-radius: 20px;
+            }
+        }
+        .post_header_part {
+            @include flexin(space-between);
+            .post_header_one {
+                @include flexin(none);
+                .profile_img_post {
+                    width: 33px;
+                    height: 33px;
+
+                    margin-right: 10px;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 80px;
+                    }
+                }
+                .post_metadata {
+                    & .post_user_name {
+                        font-size: 15px;
+                        font-family: semibold_sfpro;
+                    }
+                    & span {
+                        font-size: $small-font-size;
+                        font-family: light_sfpro;
+                    }
+                    .user_introduction {
+                        font-family: medium_sfpro;
+                        font-size: $small-font-size;
+                        opacity: 0.7;
+                        // font-size: 14px;
+                    }
+                    .user_post_date {
+                        opacity: 0.7;
+                        font-size: $small-font-size;
+                    }
+                }
+            }
+            .post_header_two {
+                font-family: bold_roboto;
+
+                & a {
+                    font-size: 14px;
+                    font-family: bold_sfpro;
+                    line-height: 1.5;
+                    border: none;
+                    color: #2e69ff;
+                }
+            }
+        }
+        .post_content_part {
+            .post_specially_for {
+                color: $primary_text_color;
+                padding-top: 6px;
+                font-size: 15px;
+                opacity: 0.8;
+                font-family: semibold_sfpro;
+            }
+            .post_textual_content {
+                margin: 0px;
+                padding: 5px 0px;
+                font-size: 15px;
+                font-family: regular_sfpro;
+                opacity: 0.8;
+                line-height: 1.4;
+                letter-spacing: -0.01em;
+            }
+        }
+        .post_stats_container {
+            @include flexin(center);
+            .post_stats_subcontainer {
+                width: 94%;
+                border-bottom: 1px solid $primary_border_color;
+                padding: 7px 0px;
+                color: $date_text_color;
+                font-family: regular_sfpro;
+                color: #424245;
+                font-size: 13px;
+                opacity: 0.7;
+                @include flexin(space-between);
+            }
+        }
+        .post_stats_action_container {
+            height: 35px;
+            .post_stats_action_subcontainer {
+                @include flexin(space-around);
+                height: 100%;
+                .post_stats_action {
+                    @include flexin(start);
+                    color: $savg_stroke_color;
+                    & svg {
+                        stroke: $savg_stroke_color;
+                    }
+                    & img {
+                        width: 17px;
+                        height: 17px;
+                        margin-right: 5px;
+                    }
+                    & span {
+                        font-family: medium_sfpro;
+                        font-size: $small-font-size;
+                    }
+                }
+            }
+        }
+    }
+}

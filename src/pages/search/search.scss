@@ -1,0 +1,74 @@
+@import "../../global.scss";
+
+
+.search_page_container {
+    .search_page_subcontainer {
+        .search_page_header {
+            position:fixed;
+            top: 0;
+            right:0;
+            left:0;
+            @include flexin(center);
+            min-height:40px;
+            background-color:#F7F7F8;
+            padding:6px;
+            border: 0.1rem solid $primary_border_color;
+        }
+
+        .search_results_container {
+            margin-top: 60px;
+            .search_page_Result_header {
+                height:45px;
+                @include flexin(start);
+                padding:0px 10px 0px 10px;
+                border-bottom: 0.6px solid $primary-border-color;
+                .searched_keyword_shower {
+                    font-family:normal_roboto;
+                    font-size: $medium-font-size;
+                    color:#636466;
+                    .searched_keyword {
+                        font-family:bold_roboto;
+                        color:$primary_text_color;
+                    }
+                }
+            }
+        }
+
+        .searched_list_container {
+            height:45px;
+                padding:0px 10px 0px 10px;
+                display:flex;
+                align-items: center;
+                border-bottom: 0.6px solid $primary-border-color;
+                @include flexin(space-between);
+                .searched_list_first_section {
+                    @include flexin(start);
+                    img {
+                        width:28px;
+                        height:28px;
+                        border-radius: 5px;
+                    }
+                    span {
+                        font-family:extra_mid_poppins;
+                        padding-left: 10px;
+                        font-size: $medium-font-size;
+                        color:$primary_text_color;
+                    }
+                    .searched_maped_word {
+                        font-family:normal_poppins;
+                        padding:unset;
+                        font-size: $medium-font-size;
+                        color:$primary_text_color;
+                    }
+                }
+                .searched_list_second_section {
+                    span {
+                        font-family:extra_mid_poppins;
+                        color:#636466;
+                        font-size: $medium-font-size;
+                    }
+            }
+        }
+        
+    }
+}

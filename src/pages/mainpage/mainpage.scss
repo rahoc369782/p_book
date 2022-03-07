@@ -1,0 +1,17 @@
+
+
+.main_root {
+    .page_main_components_containers {
+        margin-top: 90px;
+    }
+    .create_pointer_fab {
+        position:fixed;
+        bottom: 15px;
+        right:15px;
+        background-color:"dodgerblue";
+
+        .MuiFab-root {
+            background-color: #1967D2;
+        }
+    }
+}

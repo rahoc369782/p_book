@@ -1,0 +1,29 @@
+@import "../../../global.scss";
+.options_drawer_container {
+    border-top-left-radius: 14px;
+    & ul {
+        padding: unset;
+        margin: unset;
+        & li:last-child {
+            color: Red;
+            border-style: none;
+        }
+        & li {
+            font-family: normal_roboto;
+            text-decoration: none;
+            text-align: center;
+            color: $primary_text_color;
+            height: 45px;
+            font-size: $stats-font-size;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid $primary_border_color;
+        }
+    }
+}
+
+.css-9emuhu-MuiPaper-root-MuiDrawer-paper {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}

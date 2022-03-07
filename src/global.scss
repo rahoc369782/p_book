@@ -1,0 +1,95 @@
+$main_background_color: white;
+$savg_stroke_color: #636363;
+$primary_text_color: rgb(7, 7, 7);
+$date_text_color: #636466;
+$primary_background: #f7f7f8;
+$tab_heading_color: #030303;
+$primary_border_color: #ededed;
+$primary_header_color: rgb(29, 28, 28);
+$small-font-size: 13px;
+$normal-font-size: 14px;
+$medium-font-size: 16px;
+$stats-font-size: 13px;
+$large-font-size: 20px;
+$transition-speed: 0.2s;
+$line_height: 1.5;
+$pointer_background_color: #e8f0fe;
+$application_primary_color: #1967d2;
+
+// Sf pro text
+
+@font-face {
+    font-family: regular_sfpro;
+    src: url("./assets/sf_pro/SF-Pro-Text-Regular.otf");
+}
+
+@font-face {
+    font-family: medium_sfpro;
+    src: url("./assets/sf_pro/SF-Pro-Text-Medium.otf");
+}
+
+@font-face {
+    font-family: light_sfpro;
+    src: url("./assets/sf_pro/SF-Pro-Text-Light.otf");
+}
+
+@font-face {
+    font-family: semibold_sfpro;
+    src: url("./assets/sf_pro/SF-Pro-Text-Semibold.otf");
+}
+
+@font-face {
+    font-family: bold_sfpro;
+    src: url("./assets/sf_pro/SF-Pro-Text-Bold.otf");
+}
+
+@font-face {
+    font-family: normal_roboto;
+    src: url("./assets/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: mid_roboto;
+    src: url("./assets/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: bold_roboto;
+    src: url("./assets/roboto/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: roboto_serif;
+    src: url("./assets/roboto/RobotoSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: normal_poppins;
+    src: url("./assets/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: mid_poppins;
+    src: url("./assets/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: extra_mid_poppins;
+    src: url("./assets/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: bold_poppins;
+    src: url("./assets/poppins/Poppins-Bold.ttf");
+}
+
+// mixins
+@mixin flexin($flex-position) {
+    display: flex;
+    justify-content: $flex-position;
+    align-items: center;
+}
+
+body {
+    min-width: 300px;
+    margin: unset;
+}
