@@ -46,20 +46,20 @@
                 .post_metadata {
                     & .post_user_name {
                         font-size: 15px;
-                        font-family: semibold_sfpro;
+                        font-family: semibold_inter;
                     }
                     & span {
                         font-size: $small-font-size;
-                        font-family: light_sfpro;
+                        font-family: light_inter;
                     }
                     .user_introduction {
-                        font-family: medium_sfpro;
+                        font-family: medium_inter;
                         font-size: $small-font-size;
-                        opacity: 0.7;
-                        // font-size: 14px;
+                        opacity: 0.8;
+                        font-size: 14px;
                     }
                     .user_post_date {
-                        opacity: 0.7;
+                        opacity: 0.8;
                         font-size: $small-font-size;
                     }
                 }
@@ -69,7 +69,7 @@
 
                 & a {
                     font-size: 14px;
-                    font-family: bold_sfpro;
+                    font-family: bold_inter;
                     line-height: 1.5;
                     border: none;
                     color: #2e69ff;
@@ -81,16 +81,16 @@
                 color: $primary_text_color;
                 padding-top: 6px;
                 font-size: 15px;
-                opacity: 0.8;
-                font-family: semibold_sfpro;
+                // opacity: 0.9;
+                font-family: semibold_inter;
             }
             .post_textual_content {
                 margin: 0px;
                 padding: 5px 0px;
                 font-size: 15px;
-                font-family: regular_sfpro;
-                opacity: 0.8;
-                line-height: 1.4;
+                font-family: regular_inter;
+                // opacity: 0.8;
+                line-height: 1.5;
                 letter-spacing: -0.01em;
             }
         }
@@ -101,10 +101,10 @@
                 border-bottom: 1px solid $primary_border_color;
                 padding: 7px 0px;
                 color: $date_text_color;
-                font-family: regular_sfpro;
-                color: #424245;
-                font-size: 13px;
-                opacity: 0.7;
+                font-family: regular_inter;
+                color: rgb(107, 107, 107);
+                font-size: 14px;
+                // opacity: 0.7;
                 @include flexin(space-between);
             }
         }

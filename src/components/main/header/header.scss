@@ -86,7 +86,7 @@ a {
     border-radius: 5px;
     font-size: $normal-font-size;
     font-family: regular_sfpro;
-    color: $primary_text_color;
+    color: rgb(107, 107, 107);
 }
 
 .mobile_header_two {
@@ -136,7 +136,7 @@ a {
     & img {
         width: 20px;
         height: 20px;
-        // opacity: 0.8;
+        opacity: 0.6;
     }
 }
 

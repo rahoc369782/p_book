@@ -21,14 +21,14 @@ function animated_scroll() {
 
 const main_feed_scroller = document.querySelector(".main_root");
 const tab_header = document.querySelector(".mobile_header_two");
-document.addEventListener("scroll", (event) => {
-  if (window.scrollY && window.scrollY > previous_position) {
-    // tab_header.style.display = "none";
-    tab_header.classList.add("tab_header_transition_hide");
-    tab_header.classList.remove("tab_header_transition_show");
-  } else if (window.scrollY < previous_position) {
-    tab_header.classList.add("tab_header_transition_show");
-    tab_header.classList.remove("tab_header_transition_hide");
-  }
-  previous_position = window.scrollY;
-});
+// document.addEventListener("scroll", (event) => {
+//   if (window.scrollY && window.scrollY > previous_position) {
+//     // tab_header.style.display = "none";
+//     tab_header.classList.add("tab_header_transition_hide");
+//     tab_header.classList.remove("tab_header_transition_show");
+//   } else if (window.scrollY < previous_position) {
+//     tab_header.classList.add("tab_header_transition_show");
+//     tab_header.classList.remove("tab_header_transition_hide");
+//   }
+//   previous_position = window.scrollY;
+// });

@@ -17,7 +17,7 @@ let posts = [
             text_content:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam ipsum, augue vulputate pretium morbi nec cras. Eget turpis tortor neque elementum fusce in.  porttitor viverra mattis sit odio viverra est. Tempor pharetra, ultricies leo, sagittis netus.",
             media_content: [
-                "https://qphs.fs.quoracdn.net/main-qimg-229e3fe2c161e7fbec41ea052eb5a2e9", "https://qphs.fs.quoracdn.net/main-qimg-a11be159911efb8374903b9575bd8757-lq"],
+                "https://qphs.fs.quoracdn.net/main-qimg-862f0c6a7bbae3c01ee12b9295305492-lq","https://qphs.fs.quoracdn.net/main-qimg-43fb8906786f5517183cddf3c9ad81a5-lq", "https://qphs.fs.quoracdn.net/main-qimg-a11be159911efb8374903b9575bd8757-lq"],
             post_date: "4 hours ago",
         },
         post_stats: { views: 100, helpfull: 50, shares: 190 },

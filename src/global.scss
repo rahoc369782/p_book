@@ -15,6 +15,38 @@ $transition-speed: 0.2s;
 $line_height: 1.5;
 $pointer_background_color: #e8f0fe;
 $application_primary_color: #1967d2;
+//rgb(107, 107, 107)
+//b #F2F2F2 , #f9f9f9
+
+//    border: 1px solid rgb(230, 230, 230);
+// box-shadow: rgb(0 0 0 / 8%) 0px 8px 16px -4px;
+
+// inter
+
+@font-face {
+    font-family: regular_inter;
+    src: url("./assets/inter/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: semibold_inter;
+    src: url("./assets/inter/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: medium_inter;
+    src: url("./assets/inter/Inter-Medium.ttf");
+}
+
+@font-face {
+    font-family: bold_inter;
+    src: url("./assets/inter/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: light_inter;
+    src: url("./assets/inter/Inter-Light.ttf");
+}
 
 // Sf pro text
 
