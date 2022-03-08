@@ -43,7 +43,7 @@ class Search extends Component {
         <div className="search_page_subcontainer">
           {/* Search Header */}
           <div className="search_page_header">
-            <img onClick={() => this.props.set_search_status(false)} style={{ paddingRight: 10 }} src={back} />
+            <img onClick={() => this.props.status_fun(false)} style={{ paddingRight: 10 }} src={back} />
             <InputComponent
               callback={this.search_in_graph}
               input_style={{ fontSize: 14 }}
