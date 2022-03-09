@@ -1,0 +1,14 @@
+@import "../../../global.scss";
+
+.avataar_suggestions_container {
+    .avataar_suggestions_badge {
+        @include flexin(center);
+    }
+    & h6 {
+        font-family: regular_inter;
+        opacity: 0.9;
+        font-size: $small-font-size;
+        text-align: center;
+        padding: 5px 0px 0px 0px;
+    }
+}

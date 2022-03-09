@@ -121,6 +121,13 @@ $application_primary_color: #1967d2;
     align-items: center;
 }
 
+h3,
+h4,
+h5,
+h6 {
+    margin: unset;
+}
+
 body {
     min-width: 300px;
     margin: unset;

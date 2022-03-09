@@ -1,0 +1,9 @@
+@import "../../global.scss";
+
+.explore_main_container {
+    & h3 {
+        padding: 10px 0px 0px 10px;
+        font-size: $medium-font-size;
+        font-family: bold_inter;
+    }
+}

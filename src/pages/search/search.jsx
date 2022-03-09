@@ -48,7 +48,7 @@ class Search extends Component {
               callback={this.search_in_graph}
               input_style={{ fontSize: 14 }}
               placeholder="Explore Thoughtbook"
-              style={{ background: "white", minHeight: 40, marginLeft: 10 }}
+              style={{ background: "white", minHeight: 40, marginLeft: 10, width: "100%" }}
             />
           </div>
 

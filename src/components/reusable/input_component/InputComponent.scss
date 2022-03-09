@@ -3,14 +3,15 @@
 .login_input_container {
     background: white;
     min-height: 35px;
+    width: 100% !important;
     height: 35px;
     margin-left: 10px;
     user-select: auto;
     @include flexin(start);
     .login_input_subcontainer {
         height: 100%;
-        width:100%;
-        padding: 5px !important;   
+        width: 100%;
+        padding: 5px !important;
         input {
             background-color: inherit;
             font-size: $medium-font-size !important;
@@ -22,7 +23,7 @@
             outline: none;
         }
         ::placeholder {
-            color:grey;
+            color: grey;
             font-family: normal_roboto;
         }
     }

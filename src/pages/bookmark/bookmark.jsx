@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import "./explore.scss"
+import React, { Component } from 'react';
 import { Pointerpost } from "../../components/main/pointer_post/pointer_post"
-import { ProfileSuggestions } from "../../components/main/profile_suggestion_wrapper/profile_suggestion"
+import "./bookmark.scss"
+
 let posts = [
     {
         user: {
@@ -64,22 +64,9 @@ let posts = [
         post_stats: { views: 100, helpfull: 50, shares: 190 },
     },
 ];
-
-let profiles = [
-    { profile_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2010%2F01%2Favatar-saldana_400.jpg&q=60", profile_name: "movies_ols" },
-    { profile_url: "https://static.abplive.com/wp-content/uploads/2020/01/08221127/James-Cameron-Avatar-2.jpg?impolicy=abp_cdn&imwidth=640", profile_name: "alaska_de" },
-    { profile_url: "https://mui.com/static/images/avatar/1.jpg", profile_name: "alfa23" },
-    { profile_url: "https://m.media-amazon.com/images/M/MV5BNDQ1NjM4ODQyNl5BMl5BanBnXkFtZTcwNjc3MTUzNA@@._V1_.jpg", profile_name: "banjire_" },
-    { profile_url: "https://mui.com/static/images/avatar/1.jpg", profile_name: "alfa23" },
-    { profile_url: "https://m.media-amazon.com/images/M/MV5BNDQ1NjM4ODQyNl5BMl5BanBnXkFtZTcwNjc3MTUzNA@@._V1_.jpg", profile_name: "banjire_" },
-    { profile_url: "https://mui.com/static/images/avatar/1.jpg", profile_name: "alfa23" },
-    { profile_url: "https://m.media-amazon.com/images/M/MV5BNDQ1NjM4ODQyNl5BMl5BanBnXkFtZTcwNjc3MTUzNA@@._V1_.jpg", profile_name: "banjire_" },
-    { profile_url: "https://mui.com/static/images/avatar/1.jpg", profile_name: "alfa23" },
-    { profile_url: "https://m.media-amazon.com/images/M/MV5BNDQ1NjM4ODQyNl5BMl5BanBnXkFtZTcwNjc3MTUzNA@@._V1_.jpg", profile_name: "banjire_" }
-]
-class Explore extends Component {
+class Bookmarks extends Component {
     componentDidMount() {
-        console.log("Done", this.props)
+        console.log(this.props)
     }
 
     render_posts = () => {
@@ -87,7 +74,6 @@ class Explore extends Component {
             return <Pointerpost key={index} post={items} />
         })
     }
-
     shouldComponentUpdate(nextprops, nextstate) {
         if (nextprops !== this.props && nextstate !== this.state) {
             return true
@@ -97,18 +83,9 @@ class Explore extends Component {
     }
     render() {
         return (
-            <div className="explore_main_container">
-                <div>
-                    <ProfileSuggestions suggestion_data={profiles} />
-                </div>
-
-                <div>
-                    {/* <h3>For you</h3> */}
-                    {this.render_posts()}
-                </div>
-            </div>
+            <div>{this.render_posts()}</div>
         )
     }
 }
 
-export { Explore }
+export { Bookmarks }

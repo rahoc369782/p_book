@@ -15,7 +15,7 @@ class Login extends Component {
     }
 
     move_to_previous_page = () => {
-        // set_authentication()
+        set_authentication();
         return this.props.navigate(this.props.location.state.from)
     }
     render() {

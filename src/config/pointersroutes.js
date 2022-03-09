@@ -2,7 +2,8 @@ import { Favorites } from "../pages/favorites/favorites";
 import { Explore } from "../pages/explore/explore";
 import { Login } from "../pages/authorization/login/login";
 import Profile from "../pages/profile/profile";
-
+import { Bookmarks } from "../pages/bookmark/bookmark";
+import { Settings } from "../pages/settings/settings"
 const pointers_routes = [
   {
     component: Favorites,
@@ -14,6 +15,18 @@ const pointers_routes = [
     component: Explore,
     path: "/explore",
     status: false,
+    restricted: false,
+  },
+  {
+    component: Bookmarks,
+    path: "/saved",
+    status: true,
+    restricted: false,
+  },
+  {
+    component: Settings,
+    path: "/settings",
+    status: true,
     restricted: false,
   },
   {
