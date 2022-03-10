@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { Button } from '../../../components/reusable/button_component/button';
-import { Link } from "react-router-dom"
+import { Navigate, Link } from "react-router-dom"
 import { set_authentication } from "../../../utility/security/session";
 import { InputComponent } from "../../../components/reusable/input_component/InputComponent"
 import { GoogleLoginComponent } from "../../../components/reusable/google_login_component/GoogleLoginComponent"
-import "./login.scss";
 
 
-class Login extends Component {
+class Registration extends Component {
     constructor(props) {
         super(props)
     }
@@ -18,7 +17,7 @@ class Login extends Component {
     }
 
     move_to_previous_page = () => {
-        set_authentication();
+        // set_authentication();
         return this.props.navigate(this.props.location.state.from)
     }
     render() {
@@ -40,7 +39,7 @@ class Login extends Component {
                     </div>
                     <GoogleLoginComponent />
                     <div className="login_join_opt">
-                        <span data="warning">New here </span> <Link to="/welcome"><span style={{ paddingLeft: 8 }} data="forgot-password">Join us!</span></Link>
+                        <span data="warning">Already using </span> {" "}<Link to="/login"><span style={{ paddingLeft: 8 }} data="forgot-password">Signin!</span></Link>
                     </div>
                     <div className="login_privacy_section">
                         <div className="login_privacy_section1">
@@ -56,4 +55,4 @@ class Login extends Component {
     }
 }
 
-export { Login }
+export { Registration }

@@ -10,7 +10,7 @@ import Fab from '@mui/material/Fab';
 class Header extends Component {
     render() {
         return (
-            <div class="mobile_view_header">
+            <div class="pointer_mobile_view_header">
                 <div class="mobile_header_one">
                     
                     <div class="header_title"><img src={brand} /></div>

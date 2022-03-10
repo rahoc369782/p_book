@@ -13,7 +13,8 @@ class Mainpage extends Component {
         super(props)
         this.state = {
             search_open_state: false,
-            post_open_state: false
+            post_open_state: false,
+            login_state: false
         }
     }
 
@@ -28,8 +29,6 @@ class Mainpage extends Component {
     set_post_status = (post_open_state) => {
         this.setState({ post_open_state })
     }
-
-
 
     render() {
         console.log("Main render")

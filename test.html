@@ -1,0 +1,60 @@
+<div class="pm-card" style="user-select: auto;">
+    <div class="pm-logo" style="user-select: auto;"></div>
+
+    <div class="heading" style="user-select: auto;">
+        <h4 style="user-select: auto;">Sign In</h4>
+        <div class="sign-up-link-container" style="user-select: auto;">
+            <div style="user-select: auto;"><a id="sign-up-link" href="/signup?addAccount=1"
+                    style="user-select: auto;">Create Account</a> instead?</div>
+        </div>
+    </div>
+
+    <div id="notification-div" class="notify-failure notification-container" style="user-select: auto;">
+        <span id="notification-message" style="user-select: auto;"></span>
+    </div>
+
+    <form id="sign-in-form" style="user-select: auto;">
+        <div class="pm-form-group" style="user-select: auto;">
+            <label for="username" class="pm-form-label" style="user-select: auto;">Email or Username</label>
+            <input type="text" class="pm-form-control" name="username" id="username" autofocus="" autocomplete="off"
+                autocapitalize="off" spellcheck="true" value="" style="user-select: auto;">
+            <span id="input-error-username" class="input-validation-error" style="user-select: auto;"></span>
+        </div>
+        <div class="pm-form-group" style="user-select: auto;">
+            <label for="password" class="pm-form-label" style="user-select: auto;">Password</label>
+            <input type="password" class="pm-form-control" name="password" id="password" autocapitalize="off"
+                spellcheck="true" style="user-select: auto;">
+            <span id="input-error-password" class="input-validation-error" style="user-select: auto;"></span>
+        </div>
+        <div class="pm-form-group" style="user-select: auto;">
+            <input type="checkbox" id="remember-me-checkbox" checked="" style="user-select: auto;">
+            <label for="remember-me-checkbox" style="user-select: auto;">Stay signed in for 30 days</label>
+            <a class="trouble-signing-in-link" href="/trouble-signing-in?addAccount=1" style="user-select: auto;">Forgot
+                Password?</a>
+            <div class="do-not-remember-message" id="do-not-remember-message" style="display: none; user-select: auto;">
+                <span style="user-select: auto;">You will be logged out after 30 minutes of inactivity.</span>
+            </div>
+        </div>
+        <div class="pm-form-group" style="user-select: auto;">
+            <button type="submit" class="pm-btn pm-btn-primary" id="sign-in-btn" style="user-select: auto;">
+                Sign In
+            </button>
+        </div>
+
+        <input type="hidden" name="csrfToken" value="7HPybUlWnAggeIySP45hudyfdP0JxcbEtPUtw=" style="user-select: auto;">
+    </form>
+
+    <div class="pm-awesome-divider-div" style="user-select: auto;">
+        <div class="pm-awesome-divider" data-label="or" style="user-select: auto;"></div>
+    </div>
+
+    <a href="/google/oauth2" class="pm-btn pm-btn-info google-sign-in" style="user-select: auto;">
+        <div class="google-logo" style="user-select: auto;">
+            <img src="https://assets.getpostman.com/common-share/google-logo-icon-sign-in.svg" width="16px"
+                height="16px" style="user-select: auto;">
+        </div>
+        <div class="google-text" style="user-select: auto;">
+            Sign in with Google
+        </div>
+    </a>
+</div>

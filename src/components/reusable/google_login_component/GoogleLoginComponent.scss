@@ -1,0 +1,23 @@
+@import "../../../global.scss";
+
+.google_login_container {
+    border: 0.5px solid #f7f7f8;
+    // background-color: $application_primary_color;
+    height: 43px;
+    border-radius: 4px;
+    border: 1px solid #d4d4d4;
+    @include flexin(center);
+    .google_login_subcontainer {
+        @include flexin(center);
+        img {
+            width: 22px;
+            height: 22px;
+        }
+        span {
+            padding-left: 10px;
+            font-size: $small-font-size;
+            font-family: regular_inter;
+            // color: white;
+        }
+    }
+}

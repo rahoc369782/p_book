@@ -2,10 +2,10 @@ import { Routes, Route, Navigate, useLocation, useParams, useNavigate } from "re
 import { pointers_routes } from "./pointersroutes";
 import { is_authenticated } from "../utility/security/session";
 
-const ManagedRoutes = () => {
+const ManagedRoutes = ({ login_state }) => {
     let location = useLocation();
     let navigate = useNavigate();
-    console.log(is_authenticated())
+
     return (
         <Routes>
             {

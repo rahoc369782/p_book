@@ -1,0 +1,87 @@
+@import "../../../global.scss";
+
+.login_main_container {
+    .pointer_login_form_container {
+        padding: 22px;
+        .login_header_section {
+            padding: 30px 0px;
+            & h3 {
+                font-size: 25px;
+                color: #1a1a1a;
+                font-family: bold_inter;
+                text-align: center;
+            }
+        }
+        .login_meta_info {
+            margin-bottom: 16px;
+            @include flexin(space-between);
+            & [data="warning"] {
+                font-size: 12px;
+            }
+            & [data="forgot-password"] {
+                font-size: 12px;
+                font-family: bold_inter;
+                color: #3e92f2;
+            }
+        }
+        .login_join_opt {
+            margin: 16px;
+            @include flexin(center);
+            & [data="warning"] {
+                font-size: 12px;
+            }
+            & [data="forgot-password"] {
+                font-size: 14px;
+                font-family: bold_inter;
+                color: #3e92f2;
+            }
+        }
+        .login_privacy_section {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            .login_privacy_section1 {
+                @include flexin(center);
+                & span {
+                    width: 80%;
+                    color: #666666;
+                    font-size: 12px;
+                    font-family: medium_inter;
+                    text-align: center;
+                }
+            }
+            .login_privacy_section2 {
+                @include flexin(center);
+                padding: 20px 0px;
+                & span {
+                    color: #666666;
+                    font-size: 12px;
+                    font-family: medium_inter;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .awesome-divider-div {
+        padding: 0 32px;
+        .awesome-divider {
+            height: 1px;
+            width: 100%;
+            border-top: solid thin #f0f0f0;
+            margin: 24px 0;
+            text-align: center;
+        }
+        ::after {
+            content: attr(data-label);
+            display: inline-block;
+            background: #fff;
+            padding: 0 32px;
+            position: relative;
+            top: -10px;
+            font-size: 13px;
+            color: #9b9b9b;
+        }
+    }
+}
