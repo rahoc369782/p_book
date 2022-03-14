@@ -19,7 +19,12 @@ class Login extends Component {
 
     move_to_previous_page = () => {
         set_authentication();
-        return this.props.navigate(this.props.location.state.from)
+        console.log(this.props.location)
+        return this.props.navigate(this.props.location.state ? this.props.location.state.from : "/")
+    }
+    componentWillUnmount() {
+        document.getElementsByClassName("pointer_mobile_view_header")[0].style.display = "block"
+        document.getElementsByClassName("create_pointer_fab")[0].style.display = "block"
     }
     render() {
         return (
@@ -47,7 +52,7 @@ class Login extends Component {
                             <span>By continuing it is considered that you have accepted <span style={{ color: "#3e92f2" }}>Terms & Conditions</span> and <span style={{ color: "#3e92f2" }}>Privacy Policy</span>.</span>
                         </div>
                         <div className="login_privacy_section2">
-                            <span>@2022 pointers inc. All rights are reserved.</span>
+                            <span>Contact us on <span style={{ color: "#3e92f2" }}>pointersinc@gmail.com</span> <br />@2022 pointers inc. All rights are reserved.</span>
                         </div>
                     </div>
                 </div>

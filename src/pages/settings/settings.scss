@@ -1,0 +1,47 @@
+@import "../../global.scss";
+
+.settings_container {
+    .settings_subcontainer {
+        .settings_tab {
+            height: 45px;
+            border-bottom: 1px solid $primary_border_color;
+            .settings_tab_in {
+                height: 100%;
+                @include flexin(start);
+                & span {
+                    padding-left: 15px;
+                    color: #212121;
+                }
+            }
+        }
+        .setting_metadata_container {
+            position: fixed;
+            bottom: 50px;
+            right: 0;
+            left: 0;
+            .settings_meta_section {
+                @include flexin(center);
+
+                & span {
+                    width: 80%;
+                    color: #666666;
+                    font-size: 12px;
+                    font-family: medium_inter;
+                    text-align: center;
+                }
+            }
+
+            .settings_jobs_section {
+                @include flexin(center);
+                padding-bottom: 25px;
+                & span {
+                    width: 80%;
+                    color: #666666;
+                    font-size: 13px;
+                    font-family: medium_inter;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "../../../global.scss";
+
+.user_information_container {
+    padding: 15px;
+    .user_information_subcontainer {
+        .user_profile_section1 {
+            @include flexin(start);
+            align-items: start;
+
+            & [data="username_intro"] {
+                margin-left: 10px;
+
+                & h3 {
+                    font-size: 20px;
+                }
+                & span {
+                    font-size: 16px;
+                    opacity: 0.8;
+                    font-family: medium_inter;
+                }
+            }
+        }
+        .user_about {
+            & p {
+                line-height: 1.6;
+            }
+        }
+    }
+}

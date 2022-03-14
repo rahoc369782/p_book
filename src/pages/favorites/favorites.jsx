@@ -88,4 +88,12 @@ class Favorites extends Component {
     }
 }
 
+// Notes
+// Feed Create with user actions
+// Most visites Profiles
+// most visited post (likes , share, bookmark , similar)
+// self suggested
+// most search
+// tags submitted by peoples
+
 export { Favorites }
